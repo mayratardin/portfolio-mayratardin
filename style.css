@@ -1,0 +1,198 @@
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: #1C1C1C;
+    --tertiary-color: #2E8B57;
+}
+
+* {
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    padding: 32px 64px;
+}
+
+section#change{
+    position: fixed;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    margin-left: 89vw;
+}
+
+input[type="radio"]:checked + label{
+    text-transform: uppercase;
+    outline: 2px dashed var(--primary-color);
+}
+
+input[type="radio"]{
+    -webkit-appearance: none;
+}
+
+.photo{
+    border-radius: 50%;
+    border: 4px dashed var(--primary-color);
+    width: 35vh;
+    margin-bottom: -100px;
+    margin-right: 40px;
+    margin-left: 24px;    
+}
+
+div#title{
+    display: inline-block;
+}
+
+h1, h2, footer{
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+}
+
+h2{
+    margin-top: 32px;
+}
+
+main{
+    padding: 40px 70px;
+    display: flex;
+}
+
+main p{
+    text-align: justify;
+}
+
+.smaller-column{
+    width: 410px;
+}
+
+.row{
+    width: 80px;
+    border-top: 2px solid;
+    margin-top: 8px;
+}
+
+.experiences .row{
+    border-color: var(--primary-color);
+}
+
+.academic .row{
+    border-color: yellowgreen;
+}
+
+.smaller-column img{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.smaller-column li{
+    margin-top: 32px;
+    display: flex;
+}
+
+.content{
+    display: inline-block;
+    font-size: 80%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bigger-column{
+    margin-left: 24px;
+}
+
+.bigger-column h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.skills, .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill{
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin-right: 12px;
+    width: 288px;
+    margin-bottom: 32px;
+}
+
+.skill h3{
+    margin-bottom: 16px;
+}
+
+.skill li{
+    margin-top: 32px;
+}
+
+.skill li:first-child {
+    margin-top: 0;
+}
+
+.progress{
+     width: 100%; /* ocupando o espaço do pai que é a skill */
+     display: flex;
+}
+
+.stripe{
+    width: 20%; /* cada barra vai ter 20% do espaço que é o pai, totalizando o 100% */
+    margin-top: 8px;
+    height: 4px;
+    background-color: var(--secondary-color);
+}
+
+.incomplete{
+    opacity: 0.2;
+}
+
+.project{
+    width: 392px;
+    padding: 24px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.projects p{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.project img{
+    width: 392px;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.project a{
+    display: inline;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer{
+    color: var(--tertiary-color);
+    padding: 58px;
+    text-align: center;
+    font-weight: bold;
+}
